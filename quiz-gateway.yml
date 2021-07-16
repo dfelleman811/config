@@ -5,8 +5,6 @@ spring:
   application:
     name: quiz-gateway
     gateway:
-      default-filters:
-      - PrefixPath=/
       routes:
       - id: flashcard
         uri: lb://flashcard
