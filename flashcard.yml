@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: flashcard
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config
+      label: 
+        main
+  config:
+    import: configserver:http://localhost:8888
+  jpa:
+    defer-datasource-initialization: true
