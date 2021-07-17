@@ -3,12 +3,12 @@ server:
     8085
 spring:
   application:
-    name: flashcard
+    name: flashcard-service
   cloud:
     config:
       discovery:
         enabled: true
-        serviceId: config
+        serviceId: configserver
       label: 
         main
   config:
